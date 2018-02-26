@@ -11,7 +11,11 @@ public class PageController {
     public String showIndex() {
         return "index";
     }
-    
+    @RequestMapping("/")
+    public String showIndex8() {
+        return "index";
+    }    
+
     @RequestMapping("/{page}")
     public String showPage(@PathVariable String page) {
         return page;
